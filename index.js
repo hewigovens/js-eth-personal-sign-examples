@@ -1,6 +1,8 @@
 var ethUtil = require('ethereumjs-util')
 var sigUtil = require('eth-sig-util')
 var Eth = require('ethjs')
+var VConsole = require('vconsole')
+window.vConsole = new VConsole()
 window.Eth = Eth
 
 var fs = require('fs')
