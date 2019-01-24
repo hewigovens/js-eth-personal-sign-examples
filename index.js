@@ -15,6 +15,7 @@ connectButton.addEventListener('click', function () {
 function connect () {
   if (typeof ethereum !== 'undefined') {
     ethereum.enable()
+    .then(console.log)
     .catch(console.error)
   }
 }
@@ -279,7 +280,7 @@ signTypedDataV3Button.addEventListener('click', function(event) {
     contents:"Hello, Bob!"}
   })
 
-    
+
 
   var from = web3.eth.accounts[0]
 
